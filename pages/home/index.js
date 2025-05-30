@@ -21,8 +21,8 @@ Page({
   async onReady() {
     try {
       const [cardRes, swiperRes] = await Promise.all([
-        request('/home/cards'),
-        request('/home/swipers'),
+        request('/api/home/cards'),
+        request('/api/home/swipers'),
       ]);
 
       this.setData({

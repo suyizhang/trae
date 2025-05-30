@@ -232,3 +232,29 @@
 2025-05-30 17:02:43,915 INFO 83737 [-/::ffff:127.0.0.1/-/14ms GET /] 请求结束: GET / 状态码: 200 耗时: 7ms
 2025-05-30 17:02:45,214 INFO 83737 [-/::ffff:127.0.0.1/-/4ms GET /] 请求开始: GET /
 2025-05-30 17:02:45,218 INFO 83737 [-/::ffff:127.0.0.1/-/6ms GET /] 请求结束: GET / 状态码: 200 耗时: 4ms
+2025-05-30 17:51:46,590 INFO 72510 [-/::1/-/6ms GET /ws] 请求开始: GET /ws
+2025-05-30 17:51:46,592 WARN 72510 [-/::1/-/7ms GET /ws] 路径 /ws 不存在
+2025-05-30 17:51:46,773 INFO 72510 [-/::1/-/15ms GET /api/home/cards] 请求开始: GET /api/home/cards
+2025-05-30 17:51:46,774 INFO 72510 [-/::1/-/16ms GET /api/home/cards] 请求结束: GET /api/home/cards 状态码: 200 耗时: 2ms
+2025-05-30 17:51:46,776 INFO 72510 [-/::1/-/2ms GET /api/home/swipers] 请求开始: GET /api/home/swipers
+2025-05-30 17:51:46,777 INFO 72510 [-/::1/-/2ms GET /api/home/swipers] 请求结束: GET /api/home/swipers 状态码: 200 耗时: 1ms
+2025-05-30 17:51:48,668 INFO 72510 [-/::1/-/2ms GET /api/getServiceList] 请求开始: GET /api/getServiceList
+2025-05-30 17:51:48,671 INFO 72510 [-/::1/-/5ms GET /api/getServiceList] 请求结束: GET /api/getServiceList 状态码: 200 耗时: 3ms
+2025-05-30 17:51:48,674 INFO 72510 [-/::1/-/2ms GET /api/genPersonalInfo] 请求开始: GET /api/genPersonalInfo
+2025-05-30 17:51:48,677 INFO 72510 [-/::1/-/5ms GET /api/genPersonalInfo] 请求结束: GET /api/genPersonalInfo 状态码: 200 耗时: 3ms
+2025-05-30 17:51:49,330 INFO 72510 [-/::1/-/3ms GET /api/home/cards] 请求开始: GET /api/home/cards
+2025-05-30 17:51:49,337 INFO 72510 [-/::1/-/9ms GET /api/home/cards] 请求结束: GET /api/home/cards 状态码: 200 耗时: 7ms
+2025-05-30 17:51:55,363 INFO 72510 [-/::1/-/2ms POST /login/wechatLogin] 请求开始: POST /login/wechatLogin
+2025-05-30 17:51:55,364 WARN 72510 [-/::1/-/3ms POST /login/wechatLogin] 路径 /login/wechatLogin 不存在
+2025-05-30 17:52:31,669 INFO 72510 [-/::1/-/1ms GET /ws] 请求开始: GET /ws
+2025-05-30 17:52:31,670 WARN 72510 [-/::1/-/2ms GET /ws] 路径 /ws 不存在
+2025-05-30 17:52:32,252 INFO 72510 [-/::1/-/1ms GET /api/home/cards] 请求开始: GET /api/home/cards
+2025-05-30 17:52:32,253 INFO 72510 [-/::1/-/2ms GET /api/home/cards] 请求结束: GET /api/home/cards 状态码: 200 耗时: 1ms
+2025-05-30 17:52:32,254 INFO 72510 [-/::1/-/1ms GET /api/home/swipers] 请求开始: GET /api/home/swipers
+2025-05-30 17:52:32,254 INFO 72510 [-/::1/-/1ms GET /api/home/swipers] 请求结束: GET /api/home/swipers 状态码: 200 耗时: 0ms
+2025-05-30 17:52:34,602 INFO 72510 [-/::1/-/4ms GET /api/getServiceList] 请求开始: GET /api/getServiceList
+2025-05-30 17:52:34,604 INFO 72510 [-/::1/-/6ms GET /api/getServiceList] 请求结束: GET /api/getServiceList 状态码: 200 耗时: 3ms
+2025-05-30 17:52:34,607 INFO 72510 [-/::1/-/1ms GET /api/genPersonalInfo] 请求开始: GET /api/genPersonalInfo
+2025-05-30 17:52:34,607 INFO 72510 [-/::1/-/2ms GET /api/genPersonalInfo] 请求结束: GET /api/genPersonalInfo 状态码: 200 耗时: 0ms
+2025-05-30 17:52:40,314 INFO 72510 [-/::1/-/2ms POST /api/login/wechatLogin] 请求开始: POST /api/login/wechatLogin
+2025-05-30 17:52:40,317 INFO 72510 [-/::1/-/4ms POST /api/login/wechatLogin] 请求结束: POST /api/login/wechatLogin 状态码: 200 耗时: 3ms

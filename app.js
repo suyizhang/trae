@@ -34,7 +34,7 @@ App({
       });
     });
 
-    this.getUnreadNum();
+    // this.getUnreadNum();
     this.connect();
   },
   globalData: {

@@ -9,7 +9,7 @@ import { ISwiper } from '../interface/swiper';
  * 首页控制器
  * 处理首页相关的API请求
  */
-@Controller('/home')
+@Controller('/api/home')
 export class HomeController {
   @Inject()
   homeService: HomeService;

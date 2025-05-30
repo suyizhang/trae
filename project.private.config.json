@@ -66,6 +66,7 @@
   },
   "projectname": "weixin",
   "setting": {
-    "compileHotReLoad": true
+    "compileHotReLoad": true,
+    "urlCheck": false
   }
 }

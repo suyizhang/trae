@@ -6,7 +6,7 @@ import { IResponse } from '../interface/response';
  * 首页控制器
  * 处理根路径的API请求
  */
-@Controller('/')
+@Controller('/api')
 export class IndexController {
   @Inject()
   responseService: ResponseService;

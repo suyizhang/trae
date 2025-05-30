@@ -7,7 +7,7 @@ import { IResponse } from '../interface/response';
  * 登录控制器
  * 处理登录相关的API请求
  */
-@Controller('/login')
+@Controller('/api/login')
 export class LoginController {
   @Inject()
   loginService: LoginService;
@@ -42,6 +42,22 @@ export class LoginController {
       const { phone, code } = body;
       const result = await this.loginService.codeLogin(phone, code);
       return this.responseService.success(result, '验证码正确');
+    } catch (error) {
+      return this.responseService.error(error.message);
+    }
+  }
+
+  /**
+   * 微信登录
+   * @param body 请求体
+   * @returns 登录响应
+   */
+  @Post('/wechatLogin')
+  async wechatLogin(@Body() body: { code: string; userInfo?: any }): Promise<IResponse<{ token: string; isNewUser: boolean }>> {
+    try {
+      const { code, userInfo } = body;
+      const result = await this.loginService.wechatLogin(code, userInfo);
+      return this.responseService.success(result, '微信登录成功');
     } catch (error) {
       return this.responseService.error(error.message);
     }
