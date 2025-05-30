@@ -42,11 +42,18 @@ Page({
   },
 
   async login() {
-    const res = await request('/login/postCodeVerify', 'get', { code: this.data.verifyCode });
-    if (res.success) {
+    try {
+      const res = await request('/login/postCodeVerify', 'get', { code: this.data.verifyCode });
       await wx.setStorageSync('access_token', res.data.token);
       wx.switchTab({
         url: `/pages/my/index`,
+      });
+    } catch (error) {
+      console.error('验证码登录失败:', error);
+      wx.showToast({
+        title: error.message || '验证码登录失败，请稍后重试',
+        icon: 'none',
+        duration: 2000
       });
     }
   },

@@ -65,21 +65,26 @@ Page({
   },
 
   async login() {
-    if (this.data.isPasswordLogin) {
-      const res = await request('/login/postPasswordLogin', 'post', { data: this.data.passwordInfo });
-      if (res.success) {
+    try {
+      if (this.data.isPasswordLogin) {
+        const res = await request('/login/postPasswordLogin', 'post', { data: this.data.passwordInfo });
         await wx.setStorageSync('access_token', res.data.token);
         wx.switchTab({
           url: `/pages/my/index`,
         });
-      }
-    } else {
-      const res = await request('/login/getSendMessage', 'get');
-      if (res.success) {
+      } else {
+        const res = await request('/login/getSendMessage', 'get');
         wx.navigateTo({
           url: `/pages/loginCode/loginCode?phoneNumber=${this.data.phoneNumber}`,
         });
       }
+    } catch (error) {
+      console.error('登录失败:', error);
+      wx.showToast({
+        title: error.message || '登录失败，请稍后重试',
+        icon: 'none',
+        duration: 2000
+      });
     }
   },
 });

@@ -29,10 +29,11 @@ Page({
   },
 
   /**
-   * 获取 “整体情况” 数据
+   * 获取 "整体情况" 数据
    */
-  getMemberData() {
-    request('/dataCenter/member').then((res) => {
+  async getMemberData() {
+    try {
+      const res = await request('/dataCenter/member');
       const totalSituationData = res.data.template.succ.data.list;
       this.setData({
         totalSituationDataList: totalSituationData,
@@ -45,14 +46,22 @@ Page({
       this.setData({
         memberitemWidth: itemWidth,
       });
-    });
+    } catch (error) {
+      console.error('获取整体情况数据失败:', error);
+      wx.showToast({
+        title: '获取整体情况数据失败',
+        icon: 'none',
+        duration: 2000
+      });
+    }
   },
 
   /**
-   * 获取 “互动情况” 数据
+   * 获取 "互动情况" 数据
    */
-  getInteractionData() {
-    request('/dataCenter/interaction').then((res) => {
+  async getInteractionData() {
+    try {
+      const res = await request('/dataCenter/interaction');
       const interactionSituationData = res.data.template.succ.data.list;
       this.setData({
         interactionSituationDataList: interactionSituationData,
@@ -65,14 +74,22 @@ Page({
       this.setData({
         smallitemWidth: itemWidth,
       });
-    });
+    } catch (error) {
+      console.error('获取互动情况数据失败:', error);
+      wx.showToast({
+        title: '获取互动情况数据失败',
+        icon: 'none',
+        duration: 2000
+      });
+    }
   },
 
   /**
    * 完播率
    */
-  getCompleteRateData() {
-    request('/dataCenter/complete-rate').then((res) => {
+  async getCompleteRateData() {
+    try {
+      const res = await request('/dataCenter/complete-rate');
       const completeRateData = res.data.template.succ.data.list;
       this.setData({
         completeRateDataList: completeRateData,
@@ -86,19 +103,34 @@ Page({
       this.setData({
         itemHeight: itemHeight,
       });
-    });
+    } catch (error) {
+      console.error('获取完播率数据失败:', error);
+      wx.showToast({
+        title: '获取完播率数据失败',
+        icon: 'none',
+        duration: 2000
+      });
+    }
   },
 
   /**
    * 按区域统计
    */
-  getAreaData() {
-    request('/dataCenter/area').then((res) => {
+  async getAreaData() {
+    try {
+      const res = await request('/dataCenter/area');
       const areaData = res.data.template.succ.data.list;
       this.setData({
         areaDataList: areaData,
         areaDataKeysList: Object.keys(areaData[0]),
       });
-    });
+    } catch (error) {
+      console.error('获取区域统计数据失败:', error);
+      wx.showToast({
+        title: '获取区域统计数据失败',
+        icon: 'none',
+        duration: 2000
+      });
+    }
   },
 });

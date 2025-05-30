@@ -19,16 +19,26 @@ Page({
   },
   // 生命周期
   async onReady() {
-    const [cardRes, swiperRes] = await Promise.all([
-      request('/home/cards').then((res) => res.data),
-      request('/home/swipers').then((res) => res.data),
-    ]);
+    try {
+      const [cardRes, swiperRes] = await Promise.all([
+        request('/home/cards'),
+        request('/home/swipers'),
+      ]);
 
-    this.setData({
-      cardInfo: cardRes.data,
-      focusCardInfo: cardRes.data.slice(0, 3),
-      swiperList: swiperRes.data,
-    });
+      this.setData({
+        cardInfo: cardRes.data,
+        focusCardInfo: cardRes.data.slice(0, 3),
+        swiperList: swiperRes.data,
+      });
+    } catch (error) {
+      console.error('获取首页数据失败:', error);
+      Message.error({
+        context: this,
+        offset: [120, 32],
+        duration: 3000,
+        content: '获取数据失败，请稍后重试',
+      });
+    }
   },
   onLoad(option) {
     if (wx.getUserProfile) {
@@ -53,18 +63,32 @@ Page({
     this.setData({
       enable: true,
     });
-    const [cardRes, swiperRes] = await Promise.all([
-      request('/home/cards').then((res) => res.data),
-      request('/home/swipers').then((res) => res.data),
-    ]);
+    
+    try {
+      const [cardRes, swiperRes] = await Promise.all([
+        request('/home/cards'),
+        request('/home/swipers'),
+      ]);
 
-    setTimeout(() => {
+      setTimeout(() => {
+        this.setData({
+          enable: false,
+          cardInfo: cardRes.data,
+          swiperList: swiperRes.data,
+        });
+      }, 1500);
+    } catch (error) {
+      console.error('刷新首页数据失败:', error);
       this.setData({
         enable: false,
-        cardInfo: cardRes.data,
-        swiperList: swiperRes.data,
       });
-    }, 1500);
+      Message.error({
+        context: this,
+        offset: [120, 32],
+        duration: 3000,
+        content: '刷新失败，请稍后重试',
+      });
+    }
   },
   showOperMsg(content) {
     Message.success({

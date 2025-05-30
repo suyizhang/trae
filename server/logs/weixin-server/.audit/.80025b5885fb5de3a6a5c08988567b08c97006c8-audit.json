@@ -1,0 +1,15 @@
+{
+  "keep": {
+    "days": true,
+    "amount": 31
+  },
+  "auditLog": "/Users/suyizhang/suyi/weixin/server/logs/weixin-server/.audit/.80025b5885fb5de3a6a5c08988567b08c97006c8-audit.json",
+  "files": [
+    {
+      "date": 1748594716328,
+      "name": "/Users/suyizhang/suyi/weixin/server/logs/weixin-server/midway-app.log.2025-05-30",
+      "hash": "aefd827cfb4c87913a948b5e4a6380ee"
+    }
+  ],
+  "hashType": "md5"
+}

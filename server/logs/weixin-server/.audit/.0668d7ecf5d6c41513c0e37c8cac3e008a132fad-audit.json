@@ -1,0 +1,15 @@
+{
+  "keep": {
+    "days": true,
+    "amount": 31
+  },
+  "auditLog": "/Users/suyizhang/suyi/weixin/server/logs/weixin-server/.audit/.0668d7ecf5d6c41513c0e37c8cac3e008a132fad-audit.json",
+  "files": [
+    {
+      "date": 1748594716327,
+      "name": "/Users/suyizhang/suyi/weixin/server/logs/weixin-server/common-error.log.2025-05-30",
+      "hash": "8f3b817de592693d43173e6f70e928cd"
+    }
+  ],
+  "hashType": "md5"
+}

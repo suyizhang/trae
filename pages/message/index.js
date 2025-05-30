@@ -1,5 +1,5 @@
 // pages/message/message.js
-import { fetchMessageList, markMessagesRead } from '~/mock/chat';
+import request from '~/api/request';
 
 const app = getApp();
 const { socket } = app.globalData; // 获取已连接的 socketTask
@@ -58,10 +58,19 @@ Page({
   onShareAppMessage() {},
 
   /** 获取完整消息列表 */
-  getMessageList() {
-    fetchMessageList().then(({ data }) => {
-      this.setData({ messageList: data, loading: false });
-    });
+  async getMessageList() {
+    try {
+      const res = await request('/api/messageList');
+      this.setData({ messageList: res.data, loading: false });
+    } catch (error) {
+      console.error('获取消息列表失败:', error);
+      wx.showToast({
+        title: '获取消息列表失败',
+        icon: 'none',
+        duration: 2000
+      });
+      this.setData({ loading: false });
+    }
   },
 
   /** 通过 userId 获取 user 对象和下标 */
@@ -96,13 +105,19 @@ Page({
   },
 
   /** 将用户的所有消息标记为已读 */
-  setMessagesRead(userId) {
+  async setMessagesRead(userId) {
     const { user } = this.getUserById(userId);
     user.messages.forEach((message) => {
       message.read = true;
     });
     this.setData({ messageList: this.data.messageList });
     app.setUnreadNum(this.computeUnreadNum());
-    markMessagesRead(userId);
+    
+    try {
+      await request('/api/markMessagesRead', 'post', { userId });
+    } catch (error) {
+      console.error('标记消息已读失败:', error);
+      // 这里不显示错误提示，因为这是后台操作，不影响用户体验
+    }
   },
 });

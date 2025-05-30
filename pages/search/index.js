@@ -26,16 +26,20 @@ Page({
    * @returns {Promise<void>}
    */
   async queryHistory() {
-    request('/api/searchHistory').then((res) => {
-      const { code, data } = res;
-
-      if (code === 200) {
-        const { historyWords = [] } = data;
-        this.setData({
-          historyWords,
-        });
-      }
-    });
+    try {
+      const res = await request('/api/searchHistory');
+      const { historyWords = [] } = res.data;
+      this.setData({
+        historyWords,
+      });
+    } catch (error) {
+      console.error('获取搜索历史失败:', error);
+      wx.showToast({
+        title: '获取搜索历史失败',
+        icon: 'none',
+        duration: 2000
+      });
+    }
   },
 
   /**
@@ -43,16 +47,20 @@ Page({
    * @returns {Promise<void>}
    */
   async queryPopular() {
-    request('/api/searchPopular').then((res) => {
-      const { code, data } = res;
-
-      if (code === 200) {
-        const { popularWords = [] } = data;
-        this.setData({
-          popularWords,
-        });
-      }
-    });
+    try {
+      const res = await request('/api/searchPopular');
+      const { popularWords = [] } = res.data;
+      this.setData({
+        popularWords,
+      });
+    } catch (error) {
+      console.error('获取热门搜索失败:', error);
+      wx.showToast({
+        title: '获取热门搜索失败',
+        icon: 'none',
+        duration: 2000
+      });
+    }
   },
 
   setHistoryWords(searchValue) {

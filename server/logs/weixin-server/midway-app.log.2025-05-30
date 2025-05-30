@@ -1,0 +1,234 @@
+2025-05-30 16:47:34,476 WARN 1880 [-/::ffff:127.0.0.1/-/12ms GET /] NotFoundError: / Not Found
+    at notFound (/Users/suyizhang/suyi/weixin/server/node_modules/@midwayjs/koa/dist/framework.js:136:23)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/suyizhang/suyi/weixin/server/node_modules/@midwayjs/core/dist/baseFramework.js:273:40
+    at async /Users/suyizhang/suyi/weixin/server/node_modules/@midwayjs/core/dist/baseFramework.js:267:24
+    at async midwayRootMiddleware (/Users/suyizhang/suyi/weixin/server/node_modules/@midwayjs/koa/dist/framework.js:142:13) {
+  code: '404',
+  cause: undefined,
+  status: 404
+}
+2025-05-30 16:47:35,057 WARN 1880 [-/::ffff:127.0.0.1/-/2ms GET /favicon.ico] NotFoundError: /favicon.ico Not Found
+    at notFound (/Users/suyizhang/suyi/weixin/server/node_modules/@midwayjs/koa/dist/framework.js:136:23)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/suyizhang/suyi/weixin/server/node_modules/@midwayjs/core/dist/baseFramework.js:273:40
+    at async /Users/suyizhang/suyi/weixin/server/node_modules/@midwayjs/core/dist/baseFramework.js:267:24
+    at async midwayRootMiddleware (/Users/suyizhang/suyi/weixin/server/node_modules/@midwayjs/koa/dist/framework.js:142:13) {
+  code: '404',
+  cause: undefined,
+  status: 404
+}
+2025-05-30 16:48:09,683 WARN 6370 [-/::ffff:127.0.0.1/-/6ms GET /] NotFoundError: / Not Found
+    at notFound (/Users/suyizhang/suyi/weixin/server/node_modules/@midwayjs/koa/dist/framework.js:136:23)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/suyizhang/suyi/weixin/server/node_modules/@midwayjs/core/dist/baseFramework.js:273:40
+    at async /Users/suyizhang/suyi/weixin/server/node_modules/@midwayjs/core/dist/baseFramework.js:267:24
+    at async midwayRootMiddleware (/Users/suyizhang/suyi/weixin/server/node_modules/@midwayjs/koa/dist/framework.js:142:13) {
+  code: '404',
+  cause: undefined,
+  status: 404
+}
+2025-05-30 16:48:10,828 WARN 6370 [-/::ffff:127.0.0.1/-/1ms GET /] NotFoundError: / Not Found
+    at notFound (/Users/suyizhang/suyi/weixin/server/node_modules/@midwayjs/koa/dist/framework.js:136:23)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/suyizhang/suyi/weixin/server/node_modules/@midwayjs/core/dist/baseFramework.js:273:40
+    at async /Users/suyizhang/suyi/weixin/server/node_modules/@midwayjs/core/dist/baseFramework.js:267:24
+    at async midwayRootMiddleware (/Users/suyizhang/suyi/weixin/server/node_modules/@midwayjs/koa/dist/framework.js:142:13) {
+  code: '404',
+  cause: undefined,
+  status: 404
+}
+2025-05-30 16:48:37,232 WARN 9753 [-/::ffff:127.0.0.1/-/2ms GET /] NotFoundError: / Not Found
+    at notFound (/Users/suyizhang/suyi/weixin/server/node_modules/@midwayjs/koa/dist/framework.js:136:23)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/suyizhang/suyi/weixin/server/node_modules/@midwayjs/core/dist/baseFramework.js:273:40
+    at async /Users/suyizhang/suyi/weixin/server/node_modules/@midwayjs/core/dist/baseFramework.js:267:24
+    at async midwayRootMiddleware (/Users/suyizhang/suyi/weixin/server/node_modules/@midwayjs/koa/dist/framework.js:142:13) {
+  code: '404',
+  cause: undefined,
+  status: 404
+}
+2025-05-30 16:48:38,096 WARN 9753 [-/::ffff:127.0.0.1/-/2ms GET /] NotFoundError: / Not Found
+    at notFound (/Users/suyizhang/suyi/weixin/server/node_modules/@midwayjs/koa/dist/framework.js:136:23)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/suyizhang/suyi/weixin/server/node_modules/@midwayjs/core/dist/baseFramework.js:273:40
+    at async /Users/suyizhang/suyi/weixin/server/node_modules/@midwayjs/core/dist/baseFramework.js:267:24
+    at async midwayRootMiddleware (/Users/suyizhang/suyi/weixin/server/node_modules/@midwayjs/koa/dist/framework.js:142:13) {
+  code: '404',
+  cause: undefined,
+  status: 404
+}
+2025-05-30 16:49:11,122 WARN 9753 [-/::ffff:127.0.0.1/-/2ms GET /api] NotFoundError: /api Not Found
+    at notFound (/Users/suyizhang/suyi/weixin/server/node_modules/@midwayjs/koa/dist/framework.js:136:23)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/suyizhang/suyi/weixin/server/node_modules/@midwayjs/core/dist/baseFramework.js:273:40
+    at async /Users/suyizhang/suyi/weixin/server/node_modules/@midwayjs/core/dist/baseFramework.js:267:24
+    at async midwayRootMiddleware (/Users/suyizhang/suyi/weixin/server/node_modules/@midwayjs/koa/dist/framework.js:142:13) {
+  code: '404',
+  cause: undefined,
+  status: 404
+}
+2025-05-30 16:49:20,519 WARN 9753 [-/::ffff:127.0.0.1/-/1ms GET /home] NotFoundError: /home Not Found
+    at notFound (/Users/suyizhang/suyi/weixin/server/node_modules/@midwayjs/koa/dist/framework.js:136:23)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/suyizhang/suyi/weixin/server/node_modules/@midwayjs/core/dist/baseFramework.js:273:40
+    at async /Users/suyizhang/suyi/weixin/server/node_modules/@midwayjs/core/dist/baseFramework.js:267:24
+    at async midwayRootMiddleware (/Users/suyizhang/suyi/weixin/server/node_modules/@midwayjs/koa/dist/framework.js:142:13) {
+  code: '404',
+  cause: undefined,
+  status: 404
+}
+2025-05-30 16:50:33,149 WARN 9753 [-/::ffff:127.0.0.1/-/1ms GET /home/cards] NotFoundError: /home/cards Not Found
+    at notFound (/Users/suyizhang/suyi/weixin/server/node_modules/@midwayjs/koa/dist/framework.js:136:23)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/suyizhang/suyi/weixin/server/node_modules/@midwayjs/core/dist/baseFramework.js:273:40
+    at async /Users/suyizhang/suyi/weixin/server/node_modules/@midwayjs/core/dist/baseFramework.js:267:24
+    at async midwayRootMiddleware (/Users/suyizhang/suyi/weixin/server/node_modules/@midwayjs/koa/dist/framework.js:142:13) {
+  code: '404',
+  cause: undefined,
+  status: 404
+}
+2025-05-30 16:50:48,872 WARN 33349 [-/::ffff:127.0.0.1/-/3ms GET /home] NotFoundError: /home Not Found
+    at notFound (/Users/suyizhang/suyi/weixin/server/node_modules/@midwayjs/koa/dist/framework.js:136:23)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/suyizhang/suyi/weixin/server/node_modules/@midwayjs/core/dist/baseFramework.js:273:40
+    at async /Users/suyizhang/suyi/weixin/server/node_modules/@midwayjs/core/dist/baseFramework.js:267:24
+    at async midwayRootMiddleware (/Users/suyizhang/suyi/weixin/server/node_modules/@midwayjs/koa/dist/framework.js:142:13) {
+  code: '404',
+  cause: undefined,
+  status: 404
+}
+2025-05-30 16:50:50,503 WARN 33349 [-/::ffff:127.0.0.1/-/1ms GET /home] NotFoundError: /home Not Found
+    at notFound (/Users/suyizhang/suyi/weixin/server/node_modules/@midwayjs/koa/dist/framework.js:136:23)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/suyizhang/suyi/weixin/server/node_modules/@midwayjs/core/dist/baseFramework.js:273:40
+    at async /Users/suyizhang/suyi/weixin/server/node_modules/@midwayjs/core/dist/baseFramework.js:267:24
+    at async midwayRootMiddleware (/Users/suyizhang/suyi/weixin/server/node_modules/@midwayjs/koa/dist/framework.js:142:13) {
+  code: '404',
+  cause: undefined,
+  status: 404
+}
+2025-05-30 16:50:51,605 WARN 33349 [-/::ffff:127.0.0.1/-/1ms GET /home] NotFoundError: /home Not Found
+    at notFound (/Users/suyizhang/suyi/weixin/server/node_modules/@midwayjs/koa/dist/framework.js:136:23)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/suyizhang/suyi/weixin/server/node_modules/@midwayjs/core/dist/baseFramework.js:273:40
+    at async /Users/suyizhang/suyi/weixin/server/node_modules/@midwayjs/core/dist/baseFramework.js:267:24
+    at async midwayRootMiddleware (/Users/suyizhang/suyi/weixin/server/node_modules/@midwayjs/koa/dist/framework.js:142:13) {
+  code: '404',
+  cause: undefined,
+  status: 404
+}
+2025-05-30 16:51:57,457 WARN 34690 [-/::ffff:127.0.0.1/-/6ms GET /home] NotFoundError: /home Not Found
+    at notFound (/Users/suyizhang/suyi/weixin/server/node_modules/@midwayjs/koa/dist/framework.js:136:23)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/suyizhang/suyi/weixin/server/node_modules/@midwayjs/core/dist/baseFramework.js:273:40
+    at async /Users/suyizhang/suyi/weixin/server/node_modules/@midwayjs/core/dist/baseFramework.js:267:24
+    at async midwayRootMiddleware (/Users/suyizhang/suyi/weixin/server/node_modules/@midwayjs/koa/dist/framework.js:142:13) {
+  code: '404',
+  cause: undefined,
+  status: 404
+}
+2025-05-30 16:51:59,762 WARN 34690 [-/::ffff:127.0.0.1/-/1ms GET /home] NotFoundError: /home Not Found
+    at notFound (/Users/suyizhang/suyi/weixin/server/node_modules/@midwayjs/koa/dist/framework.js:136:23)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/suyizhang/suyi/weixin/server/node_modules/@midwayjs/core/dist/baseFramework.js:273:40
+    at async /Users/suyizhang/suyi/weixin/server/node_modules/@midwayjs/core/dist/baseFramework.js:267:24
+    at async midwayRootMiddleware (/Users/suyizhang/suyi/weixin/server/node_modules/@midwayjs/koa/dist/framework.js:142:13) {
+  code: '404',
+  cause: undefined,
+  status: 404
+}
+2025-05-30 16:53:29,213 WARN 64317 [-/::ffff:127.0.0.1/-/8ms GET /] NotFoundError: / Not Found
+    at notFound (/Users/suyizhang/suyi/weixin/server/node_modules/@midwayjs/koa/dist/framework.js:136:23)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/suyizhang/suyi/weixin/server/node_modules/@midwayjs/core/dist/baseFramework.js:273:40
+    at async /Users/suyizhang/suyi/weixin/server/node_modules/@midwayjs/core/dist/baseFramework.js:267:24
+    at async midwayRootMiddleware (/Users/suyizhang/suyi/weixin/server/node_modules/@midwayjs/koa/dist/framework.js:142:13) {
+  code: '404',
+  cause: undefined,
+  status: 404
+}
+2025-05-30 16:54:01,959 WARN 64317 [-/::ffff:127.0.0.1/-/2ms GET /api] NotFoundError: /api Not Found
+    at notFound (/Users/suyizhang/suyi/weixin/server/node_modules/@midwayjs/koa/dist/framework.js:136:23)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/suyizhang/suyi/weixin/server/node_modules/@midwayjs/core/dist/baseFramework.js:273:40
+    at async /Users/suyizhang/suyi/weixin/server/node_modules/@midwayjs/core/dist/baseFramework.js:267:24
+    at async midwayRootMiddleware (/Users/suyizhang/suyi/weixin/server/node_modules/@midwayjs/koa/dist/framework.js:142:13) {
+  code: '404',
+  cause: undefined,
+  status: 404
+}
+2025-05-30 16:54:07,163 WARN 64317 [-/::ffff:127.0.0.1/-/2ms GET /api/genPersonalInfo] NotFoundError: /api/genPersonalInfo Not Found
+    at notFound (/Users/suyizhang/suyi/weixin/server/node_modules/@midwayjs/koa/dist/framework.js:136:23)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/suyizhang/suyi/weixin/server/node_modules/@midwayjs/core/dist/baseFramework.js:273:40
+    at async /Users/suyizhang/suyi/weixin/server/node_modules/@midwayjs/core/dist/baseFramework.js:267:24
+    at async midwayRootMiddleware (/Users/suyizhang/suyi/weixin/server/node_modules/@midwayjs/koa/dist/framework.js:142:13) {
+  code: '404',
+  cause: undefined,
+  status: 404
+}
+2025-05-30 16:54:09,396 WARN 64317 [-/::ffff:127.0.0.1/-/2ms GET /api/genPersonalInfo] NotFoundError: /api/genPersonalInfo Not Found
+    at notFound (/Users/suyizhang/suyi/weixin/server/node_modules/@midwayjs/koa/dist/framework.js:136:23)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/suyizhang/suyi/weixin/server/node_modules/@midwayjs/core/dist/baseFramework.js:273:40
+    at async /Users/suyizhang/suyi/weixin/server/node_modules/@midwayjs/core/dist/baseFramework.js:267:24
+    at async midwayRootMiddleware (/Users/suyizhang/suyi/weixin/server/node_modules/@midwayjs/koa/dist/framework.js:142:13) {
+  code: '404',
+  cause: undefined,
+  status: 404
+}
+2025-05-30 16:54:15,034 WARN 64317 [-/::ffff:127.0.0.1/-/1ms GET /api/genPersonalInfo] NotFoundError: /api/genPersonalInfo Not Found
+    at notFound (/Users/suyizhang/suyi/weixin/server/node_modules/@midwayjs/koa/dist/framework.js:136:23)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/suyizhang/suyi/weixin/server/node_modules/@midwayjs/core/dist/baseFramework.js:273:40
+    at async /Users/suyizhang/suyi/weixin/server/node_modules/@midwayjs/core/dist/baseFramework.js:267:24
+    at async midwayRootMiddleware (/Users/suyizhang/suyi/weixin/server/node_modules/@midwayjs/koa/dist/framework.js:142:13) {
+  code: '404',
+  cause: undefined,
+  status: 404
+}
+2025-05-30 16:54:40,883 WARN 73411 [-/::ffff:127.0.0.1/-/8ms GET /api/genPersonalInfo] NotFoundError: /api/genPersonalInfo Not Found
+    at notFound (/Users/suyizhang/suyi/weixin/server/node_modules/@midwayjs/koa/dist/framework.js:136:23)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/suyizhang/suyi/weixin/server/node_modules/@midwayjs/core/dist/baseFramework.js:273:40
+    at async /Users/suyizhang/suyi/weixin/server/node_modules/@midwayjs/core/dist/baseFramework.js:267:24
+    at async midwayRootMiddleware (/Users/suyizhang/suyi/weixin/server/node_modules/@midwayjs/koa/dist/framework.js:142:13) {
+  code: '404',
+  cause: undefined,
+  status: 404
+}
+2025-05-30 16:56:23,758 WARN 87627 [-/::ffff:127.0.0.1/-/6ms GET /api/genPersonalInfo] NotFoundError: /api/genPersonalInfo Not Found
+    at notFound (/Users/suyizhang/suyi/weixin/server/node_modules/@midwayjs/koa/dist/framework.js:136:23)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/suyizhang/suyi/weixin/server/node_modules/@midwayjs/core/dist/baseFramework.js:273:40
+    at async /Users/suyizhang/suyi/weixin/server/node_modules/@midwayjs/core/dist/baseFramework.js:267:24
+    at async midwayRootMiddleware (/Users/suyizhang/suyi/weixin/server/node_modules/@midwayjs/koa/dist/framework.js:142:13) {
+  code: '404',
+  cause: undefined,
+  status: 404
+}
+2025-05-30 16:57:29,128 WARN 1465 [-/::ffff:127.0.0.1/-/7ms GET /] NotFoundError: / Not Found
+    at notFound (/Users/suyizhang/suyi/weixin/server/node_modules/@midwayjs/koa/dist/framework.js:136:23)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/suyizhang/suyi/weixin/server/node_modules/@midwayjs/core/dist/baseFramework.js:273:40
+    at async /Users/suyizhang/suyi/weixin/server/node_modules/@midwayjs/core/dist/baseFramework.js:267:24
+    at async midwayRootMiddleware (/Users/suyizhang/suyi/weixin/server/node_modules/@midwayjs/koa/dist/framework.js:142:13) {
+  code: '404',
+  cause: undefined,
+  status: 404
+}
+2025-05-30 17:01:32,713 WARN 62288 [-/::ffff:127.0.0.1/-/6ms GET /] NotFoundError: / Not Found
+    at notFound (/Users/suyizhang/suyi/weixin/server/node_modules/@midwayjs/koa/dist/framework.js:136:23)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/suyizhang/suyi/weixin/server/node_modules/@midwayjs/core/dist/baseFramework.js:273:40
+    at async /Users/suyizhang/suyi/weixin/server/node_modules/@midwayjs/core/dist/baseFramework.js:267:24
+    at async midwayRootMiddleware (/Users/suyizhang/suyi/weixin/server/node_modules/@midwayjs/koa/dist/framework.js:142:13) {
+  code: '404',
+  cause: undefined,
+  status: 404
+}
+2025-05-30 17:02:43,908 INFO 83737 [-/::ffff:127.0.0.1/-/10ms GET /] 请求开始: GET /
+2025-05-30 17:02:43,915 INFO 83737 [-/::ffff:127.0.0.1/-/14ms GET /] 请求结束: GET / 状态码: 200 耗时: 7ms
+2025-05-30 17:02:45,214 INFO 83737 [-/::ffff:127.0.0.1/-/4ms GET /] 请求开始: GET /
+2025-05-30 17:02:45,218 INFO 83737 [-/::ffff:127.0.0.1/-/6ms GET /] 请求结束: GET / 状态码: 200 耗时: 4ms

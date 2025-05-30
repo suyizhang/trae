@@ -47,26 +47,41 @@ Page({
 
   async onShow() {
     const Token = wx.getStorageSync('access_token');
-    const personalInfo = await this.getPersonalInfo();
+    try {
+      const personalInfo = await this.getPersonalInfo();
 
-    if (Token) {
-      this.setData({
-        isLoad: true,
-        personalInfo,
-      });
+      if (Token) {
+        this.setData({
+          isLoad: true,
+          personalInfo,
+        });
+      }
+    } catch (error) {
+      console.error('获取个人信息失败:', error);
+      this.onShowToast('#t-toast', '获取个人信息失败');
     }
   },
 
   getServiceList() {
-    request('/api/getServiceList').then((res) => {
-      const { service } = res.data.data;
-      this.setData({ service });
-    });
+    request('/api/getServiceList')
+      .then((res) => {
+        const { service } = res.data;
+        this.setData({ service });
+      })
+      .catch((error) => {
+        console.error('获取服务列表失败:', error);
+        this.onShowToast('#t-toast', '获取服务列表失败');
+      });
   },
 
   async getPersonalInfo() {
-    const info = await request('/api/genPersonalInfo').then((res) => res.data.data);
-    return info;
+    try {
+      const res = await request('/api/genPersonalInfo');
+      return res.data;
+    } catch (error) {
+      console.error('获取个人信息详情失败:', error);
+      throw error; // 向上传递错误，让调用者处理
+    }
   },
 
   onLogin(e) {
